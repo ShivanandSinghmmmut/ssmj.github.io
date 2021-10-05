@@ -1,0 +1,636 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+    height: 146px;
+
+    background-color: #D9EEE1!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* position: sticky; */
+    top: 0;
+    cursor: pointer;
+    
+    
+}
+.notice-board{
+    position: absolute;
+    
+    right: 5%;
+    top: 325px;
+}
+.notice-header{
+    color: #eb39dc;
+}
+.movingbody_{
+    color: #ed215b;
+}
+
+
+.about-main{
+    background-color: #d3f7e1!important;
+    height: 60vh;
+    display: block;
+}
+.school-name{
+    background-color: #ff6666; 
+    display: block;
+    height: 5vh;
+    
+    /* position: sticky; */
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    top: 145px;
+    z-index: 1020;
+    text-decoration-color: aqua;
+    animation-name: shiva1;
+    
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    
+    
+}
+@keyframes shiva1{
+    from{
+        background-color: rgb(108 255 255);
+        color: rgb(124, 21, 21);
+    }
+    to{
+        background-color: #fecd91;
+        color: rgb(0, 17, 255);
+    }
+}
+
+
+
+
+
+.logo{
+    margin-top: -11px;
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    
+}
+
+.logo img{
+    width: 110px;
+    border: 3px solid white;
+    border-radius: 106px;
+
+}
+
+
+.nav-list{
+    width: 100%;
+    margin-top: -80px;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-list li{
+    padding: 26px 24px;
+    list-style: none;
+}
+
+.nav-list li a{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+
+}
+.nav-list li a:hover{
+    color: rgb(226, 14, 14);
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.left-nav{
+    width: 30%;
+    
+    text-align: right;
+}
+.school-name-Aboutus{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.background{
+    background: rgb(127 112 112 / 70%) url(image/bg4.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.about-background{
+    background: rgb(92 85 85 / 70%) url(image/bg2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+/* .admission-background{
+    background: rgb(92 85 85 / 70%) url(image/im2.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+} */
+.box-main{
+    margin: auto;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 80%;
+    
+}
+.box1{
+    margin: auto;
+    width: 80%;
+    display: flex;
+    
+}
+.contact-us{
+    margin: 30px;
+}
+.firstsection{
+    margin-top: 4px;
+    height: 100vh;
+}
+.about-image{
+    height: 50vh;
+    
+}
+.firstHalf{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.secondHalf{
+    width: 80%;
+    
+}
+.secondHalf img{
+    width: 50%;
+    border: 4px solid white;
+    border-radius: 150px;
+    display: flex;
+    justify-content: center;
+}
+.secondHalf-box1{
+    width: 40%;
+}
+.secondHalf-box1 img{
+    width: 26vw;
+    
+}
+.firstHalf-box1{
+    display: block;
+    width: 46%;
+}
+.firstHalf-box1-aboutus{
+    margin: 10px;
+}
+.firstHalf-box1-ourmission{
+    margin: 10px;
+}
+.firstHalf-box1-ourvission{
+    margin: 10px;
+}
+.secondsection{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #d3f7e1!important;
+    /* height: 50vh; */
+}
+/* .our-management{
+    margin-bottom: 50px;
+    height: 56vh;
+} */
+.our-management{
+    margin: auto;
+    /* padding: 10px; */
+    margin-bottom: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.footer-black{
+    background-color: #000000;
+    height: 32vh;
+}
+.contact-media-link{
+    color: #ffffff;
+    display: flex;
+    height: 32vh;
+    /* margin-left: 55px; */
+}
+.footer-contact-us{
+    width: 28%;
+    background-color: #497d91;
+    text-align: center;
+    /* margin: 36px; */
+
+}
+.footer-media{
+    width: 26%;
+    background-color: #348f8f;
+    text-align: center;
+    /* margin: 30px; */
+}
+
+.footer-important-links{
+    width: 30%;
+    /* margin: 23px; */
+    background-color: #ff6666;
+    text-align: center;
+}
+.footer-important-links li a{
+    text-decoration: none;
+    color: #000000;
+}
+.footer-important-links li{
+    list-style: none;
+}
+.footer-visit-us{
+    background-color: #fecd91;
+    text-align: center;
+    width: 25%;
+    
+}
+
+
+
+.text-management{
+    text-align: center;
+    background-color: #ff6666;
+    margin-bottom: 10px;
+    height: 6vh;
+    
+}
+.about-first-section-box1{
+    width: 50vw;
+    border: 5px solid #1fdcfd!important;
+    box-shadow: 15px 13px #d9abe1;
+    margin-left: 20px;
+    padding: 20px;
+}
+.about-first-section-box2{
+    width: 50vw;
+    
+}
+.about-first-section-box2 img{
+    width: 40vw;
+    margin: 10px;
+    border: 5px solid #a62fff;
+    margin: 40px;
+    box-shadow: 15px 15px #ff9c8c;
+}
+.about-first-section{
+    display: flex;
+    background-color: #D9EEE1!important;
+}
+.about-second-section-box1 img{
+    width: 40vw;
+    margin: 10px;
+    border: 5px solid #37704b;
+    margin: 65px;
+    box-shadow: 15px 15px #4e2b26;
+}
+.about-second-section{
+    display: flex;
+    background-color: #D9EEE1!important;
+    
+}
+.about-second-section-box2{
+    width: 50vw;
+    border: 5px solid #3acccc;
+    box-shadow: 15px 13px #800e50;
+    margin: 88px;
+    padding: 20px;
+}
+.about-second-section-box3{
+    width: 50vw;
+    border: 5px solid #734c99;
+    box-shadow: 15px 13px #3639d1;
+    margin: 88px;
+    padding: 20px;
+}
+.about-second-section-box1{
+    width: 43vw;
+    
+}
+.s2-image img{
+    margin-left: 64px;
+    margin-right: 59px;
+    width: 150px;
+}
+.s1-image img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+}
+.s3-image img{
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 15px;
+    
+}
+
+.s2-image{
+    text-align: center;
+    height: 45vh;
+}
+.s3-image{
+    text-align: center;
+    height: 30vh;
+}
+.s1-image{
+    text-align: center;
+    height: 45vh;
+}
+
+.academics-first-section{
+    background-color: #eee0d0;
+    height: 76vh;
+    width: 74vw;
+    margin: auto;
+    
+}
+.academics-table{
+    margin: auto;
+    width: 100vw;
+    height: 500px;
+    margin-top: 10px;
+}
+.academics-table th{
+    border: 2px solid rgb(1, 19, 97);
+    background-color: aqua;
+}
+.academics-table td{ text-align: center;
+    border: 2px solid #31598b;
+    background-color: rgb(183 240 234);
+}
+.contactUS-table{
+    margin: auto;
+    width: 1057px;
+    height: 690px;
+    margin-top: 10px;
+}
+.contactUS-table th{
+    border: 2px solid rgb(1 1 1);
+    background-color: rgb(93 246 204);
+}
+.contactUS-table td{ text-align: center;
+    border: 2px solid #83318b;
+    background-color: rgb(240 183 191);
+}
+.Admission-first-section{
+    height: 110vh;
+    display: flex;
+    /* margin-top: 10px; */
+    
+
+}
+.admission-first-section-box1{
+    background-color: #e3bfbf;
+    padding: 43px;
+    width: 55vw;
+    margin: 60px;
+    box-shadow: 15px 13px #e1d3ab;
+    
+}
+.admission-first-section-box2{
+    background-color: #96eccc;
+    padding: 43px;
+    width: 55vw;
+    margin: 60px;
+    box-shadow: 15px 13px #94d3b0;
+    
+}
+.Admission-first-section-form{
+    background-color: #31598b;
+    height: 75vh;
+    width: 300px;
+    margin-left: 67px;
+    margin-top: 80px;
+}
+
+.Admission-ask-query-form{
+    margin-left: 96px;
+    margin-top: 61px;
+    
+    
+    
+}
+.Examination-first-section{
+    height: 110vh;
+    display: flex;
+    /* margin-top: 10px; */
+    
+
+}
+.Examination-first-section-box1{
+    background-color: #7d76e5;
+    padding: 43px;
+    width: 55vw;
+    margin: 60px;
+    box-shadow: 15px 13px #35e7ad;
+    
+}
+.Examination-first-section-box2{
+    background-color: #25f3a6;
+    padding: 43px;
+    width: 55vw;
+    margin: 60px;
+    box-shadow: 15px 13px #3f63b3;
+    
+}
+.Examination-first-section-form{
+    background-color: rgb(227 85 111);
+    height: 75vh;
+    width: 300px;
+    margin-left: 67px;
+    margin-top: 80px;
+}
+
+.Examination-ask-query-form{
+    margin-left: 96px;
+    margin-top: 61px;
+    
+    
+    
+}
+
+.galery-first-section{
+    display: flex;
+}
+
+.galery-second-section{
+    display: flex;
+    
+}
+.galery-image-container img{
+    width: 24vw;
+}
+.galery-image-container{
+    margin: 10px;
+    border: 2px solid red;
+}
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+    display: none;
+    
+}
+
+.line{
+    width: 33px;
+    background-color: black;
+    height: 4px;
+    margin: 5px 3px;
+}
+.footer-copyright-text{
+    height: 20%;
+    width: 100%;
+    background-color: #19284e;
+    
+    
+}
+.copyright-center{
+    text-align: center;
+    color:  #ed215b;
+}
+@media only screen and (max-width: 1200px){
+    .nav-list{
+        margin: auto;
+        width: 100vw;
+        flex-direction: column;
+        background-color: #1fdcfd;
+    }
+    
+    .navbar li{
+        margin: auto;
+    }
+    
+    .burger{
+        display: block;
+    }
+    .contact-media-link{
+        flex-direction: column;
+        height: 130vh;
+    }
+    .footer-contact-us{
+        width: 100vw;
+        height: 50vh;
+    }
+    .footer-media{
+        width: 100vw;
+        height: 50vh;
+        
+    }
+    .footer-important-links{
+        width: 100vw;
+        height: 50vh;
+    }
+    .footer-visit-us{
+        width: 100vw;
+        height: 50vh;
+    }
+    .box1{
+        flex-direction: column;
+        margin: auto;
+        
+    }
+    .secondHalf-box1 img{
+        width: 60vw;
+    }
+    /* .image-container{
+        flex-direction: column;
+        
+    } */
+    /* .our-management{
+        height: 180vh;
+    } */
+    /* .s1-image{
+        height: 50vh;
+    }
+    .s2-image{
+        height: 50vh;
+    } */
+    .firstHalf-box1-aboutus{
+       width: 80vw;
+        
+    }
+    .firstHalf-box1-ourmission{
+        width: 80vw;
+    }
+    .firstHalf-box1-ourvission{
+        width: 80vw;
+    }
+    
+    .v-class{
+        opacity: 0;
+    }
+    .about-first-section{
+        flex-direction: column;
+    }
+    .about-second-section{
+        flex-direction: column;
+    }
+    .about-first-section-box1{
+        width: 80vw;
+    }
+    
+    .about-first-section-box2 img{
+        width: 80vw;
+    }
+    .Admission-first-section{
+        flex-direction: column;
+    }
+    .Examination-first-section{
+        flex-direction: column;
+    }
+    .about-second-section-box1 img{
+        width: 64vw;
+    }
+    .logo img{
+        margin-left: 106px;
+    }
+    
+    
+    
+   
+    /* .s1-image img{
+        width: 40vw;
+    }
+    .s2-image img{
+        width: 40vw;
+    } */
+    .notice-board{
+        justify-content: center;
+        height: 50px;
+    }
+    .footer-copyright-text{
+        height: 30%;
+    }
+    .Admission-first-section-form{
+        width: 300px;
+        margin: auto;
+    }
+    .admission-first-section-box1{
+        margin: auto;
+    }
+    .admission-first-section-box2{
+        margin: 60px auto;
+    }
+    
+}
