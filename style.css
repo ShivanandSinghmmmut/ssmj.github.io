@@ -1,29 +1,76 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
-    height: 146px;
-
-    background-color: #D9EEE1!important;
+.header{
     display: flex;
+    margin-bottom: 20px;
+}
+
+.header-l{
+    margin-left : 150px;
+    display: flex;
+}
+
+.header-l img{
+    width: 150px;
+    height: 150px;
+}
+
+.header-l p{
+    font-size: 2rem;
+    margin-top:28px;
+    margin-left:8px;
+}
+
+.header-l p span{
+    font-size: 2rem;
+    display: grid;
+}
+
+.header-r {
+    margin: 20px 40px 8px 100px;
+    
+}
+
+.header-r p{
+    margin: 20px 40px 8px 40px; 
+    display: grid;
+}
+
+.navbar {
+    height: 50px;
+    position:relative;
+    z-index:-1;
+    background-color: #22213D!important;
     align-items: center;
     justify-content: center;
-    /* position: sticky; */
-    top: 0;
-    cursor: pointer;
-    
-    
+    animation: myani 1.5s ease;
+    transition: all 0.5s ease;
 }
+
+@keyframes myani{
+    0%{
+        transform: translateX(-100%);
+    }
+    20% {
+        transform: skew(40deg, -20deg);
+    }
+
+}
+
+
+
 .notice-board{
     position: absolute;
-    
     right: 5%;
     top: 325px;
 }
+
 .notice-header{
-    color: #eb39dc;
+    color: #ffffff;
 }
 .movingbody_{
     color: #ed215b;
@@ -36,31 +83,32 @@
     display: block;
 }
 .school-name{
-    background-color: #ff6666; 
+    background-color: #F76E11;
     display: block;
     height: 5vh;
-    
     /* position: sticky; */
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 25px;
     top: 145px;
     z-index: 1020;
-    text-decoration-color: aqua;
     animation-name: shiva1;
-    
     animation-duration: 35s;
     animation-iteration-count: infinite;
     
     
 }
 @keyframes shiva1{
-    from{
-        background-color: rgb(108 255 255);
-        color: rgb(124, 21, 21);
+    30%{
+        background-color: rgb(124, 21, 21);
+        color: rgb(245, 245, 245);
     }
-    to{
-        background-color: #fecd91;
-        color: rgb(0, 17, 255);
+    50%{
+        background-color: #F76E11;
+        color: rgb(255, 255, 255);
+    }
+    80%{
+        background-color: #00ff00;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -87,24 +135,24 @@
 
 .nav-list{
     width: 100%;
-    margin-top: -80px;
     display: flex;
     justify-content: center;
 }
 
 .nav-list li{
-    padding: 26px 24px;
+    margin-bottom:0px;
+    padding: 8px 24px;
     list-style: none;
 }
 
 .nav-list li a{
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 
 }
 .nav-list li a:hover{
-    color: rgb(226, 14, 14);
+    color: rgb(255, 230, 0);
     font-size: larger;
     font-weight: bolder;
 
@@ -154,7 +202,7 @@
     margin: 30px;
 }
 .firstsection{
-    margin-top: 4px;
+    margin-top: 0px;
     height: 100vh;
 }
 .about-image{
@@ -211,13 +259,12 @@
 } */
 .our-management{
     margin: auto;
-    /* padding: 10px; */
-    margin-bottom: 10px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-
+    animation: myani 1.5s ease;
+    transition: all 0.5s ease;
 }
 
 
@@ -269,9 +316,10 @@
 
 .text-management{
     text-align: center;
-    background-color: #ff6666;
+    background-color: #19284e;
     margin-bottom: 10px;
     height: 6vh;
+    color:white;
     
 }
 .about-first-section-box1{
@@ -499,11 +547,11 @@
     margin: 5px 3px;
 }
 .footer-copyright-text{
-    height: 20%;
-    width: 100%;
-    background-color: #19284e;
-    
-    
+    padding:8px;
+    background-color: #19284e;  
+}
+.footer-copyright-text p{
+    color: white;  
 }
 .copyright-center{
     text-align: center;
@@ -619,9 +667,7 @@
         justify-content: center;
         height: 50px;
     }
-    .footer-copyright-text{
-        height: 30%;
-    }
+
     .Admission-first-section-form{
         width: 300px;
         margin: auto;
