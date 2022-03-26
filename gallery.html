@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Examination</title>
+    <title>Gallery</title>
 </head>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="gallery-style.css">
 <body>
-
     <nav class="navbar ">
 
         <div class="logo"><img src="image/logo3.png" alt="logo"></div>
@@ -31,81 +31,28 @@
     </nav>
     
     <strong class="school-name">
-        <marquee behavior="" direction="" scrollamount = "25"><div class="animated-school-name">Saraswati Shishu Mandir</div></marquee>
+        <marquee behavior="" direction="" scrollamount = "25"><div class="animated-school-name">Sarswati Shishu Mandir</div></marquee>
         
     </strong>
-
     <div class="burger">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
-
-
-
-
-    <section class="Examination-first-section">
-        
-        <div class="Examination-first-section-container">
-            <div class="Examination-first-section-box1">
-                <h1>Registration & Admission</h1>
-                <ol style="margin-left: 26px;">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                </ol>
-            </div>
-            <div class="Examination-first-section-box2">
-                <h1>Fee payment procedure</h1>
-                <ol style="margin-left: 26px;">
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, eveniet.</li>
-                </ol>
-            </div>
-            
-        </div>
-        <div class="Examination-first-section-form">
-            
-            <form action="backend.php" class="Examination-ask-query-form">
-                <h1 style="color: #021b52;">Ask Query</h1>
-                <div>
-                    <input type="text" placeholder="Name" style="width: 114px;">
-                </div>
-                <br>
-                <div>
-                    <input type="email" placeholder="Email" style="width: 114px;">
-                </div>
-                <br>
-                <div>
-                    <input type="number" placeholder="Mo.number" style="width: 114px;">
-                </div>
-                <br>
-                <br>
-                <div>
-                    <input type="date" placeholder="Date" style="width: 114px;"> 
-                </div>
-               
-                <br>
-                <br>
-                <div>
-                    Ask your Query: <br><textarea name="write text" cols="30" rows="10" style="width: 114px;"></textarea>
-                </div>
-                <br>
-                <div>
-                    <input type="submit" value="Submit now" style="width: 80px;">
-                    <input type="reset" value="Reset now" style="width: 70px;">
-                </div>
-                
-            </form>
-        </div>
-    </section>
+    <div class="full-img" id="fullImgBox">
+        <img src="image/modified-bg-1.jpg" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="img-gallery">
+        <img src="image/modified-bg-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-4.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-1.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-2.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-3.jpg" onclick="openFullImg(this.src)">
+        <img src="image/modified-bg-4.jpg" onclick="openFullImg(this.src)">
+    </div>
 
     <footer class="footer-main">
         <div class="footer-contact-media-link">
@@ -156,6 +103,19 @@
 
         </div>
     </footer>
+
     <script src="js/resp.js"></script>
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+
+    </script>
 </body>
 </html>
