@@ -1,43 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saraswati Shishu Mandir</title>
+    <title>Document</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootsrap Icon Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <!-- Font Awesome CSS Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
 <body>
+    <!-- Header Section -->
+    <div class="header">
+        <div class="header-l">
+            <img src="image/logo3.png" alt="logo">
+            <p>Sarswati Shishu Mandir <span>Bhiti Rawat, Sahjanwa, Gorakhpur</span> </p>
+        </div>
+        <div class="header-r">
+            <p>Email : saraswatishishu@gmail.com <span>Contact : +8588888888</span></p>
+        </div>
+    </div>
+
+    <!-- Navbar Section -->
     <nav class="navbar">
-
-        <div class="logo"><img src="image/logo3.png" alt="logo"></div>
-
-        <ul class="nav-list v-class">
-
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="admission.html">Admission</a></li>
-            <li><a href="examination.html">Examination</a></li>
-            <li><a href="academics.html">Academics</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="#News & Events">News & Events</a></li>
-            <li><a href="#Achievements">Achievements</a></li>
-            <li><a href="contactUs.html">Contact Us</a></li>
-
-        </ul>
-
+        <div class="navbar_main">
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="admission.html">Admission</a></li>
+                <li><a href="examination.html">Examination</a></li>
+                <li><a href="academics.html">Academics</a></li>
+                <li><a href="galery.html">Gallery</a></li>
+                <li><a href="#News & Events">News & Events</a></li>
+                <li><a href="#Achievements">Achievements</a></li>
+                <li><a href="contactUs.html">Contact Us</a></li>
+            </ul>
+        </div>
     </nav>
-
-
+  
+    <!-- School Name Marquee -->
     <strong class="school-name">
-        <marquee behavior="" direction="" scrollamount="25">
-            <div class="animated-school-name">Saraswati Shishu Mandir</div>
-        </marquee>
-
+        <marquee behavior="" direction="" scrollamount = "25"><div class="animated-school-name">Sarswati Shishu Mandir</div></marquee>
+        
     </strong>
+
+    <!-- Body First Content -->
     <section class="background firstsection">
 
         <div class="burger">
@@ -46,70 +56,73 @@
             <div class="line"></div>
         </div>
 
+        <!-- Notice Board Box -->
         <div class="notice-board" style="width: 380px;">
-            <h1 class="notice-header" style="text-align: center; background-color: #19196c">NOTICE</h1>
-            <marquee behavior="scroll" direction="up" scrollamount="8"
+            <h1 class="notice-header" style="text-align: center; background-color:#19284e;">NOTICE</h1>
+            <marquee behavior="scroll" direction="up" scrollamount="8" 
                 onmouseover="this.setAttribute('scrollamount',0,0);this.stop();"
                 onmouseout="this.setAttribute('scrollamount',8,0);this.start();" class="movingbody_">
                 <script>
-                    for (var i = 1; i <= 6; i++) {
-                        if (i == 1)
-                            document.write(
-                                '<p class="m-par_">' +
-                                i +
-                                ". Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae sed nesciunt?  </p>"
-                            );
-                        if (i == 2)
-                            document.write(
-                                '<p class="m-par_">' +
-                                i +
-                                ". Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit quia a nihil </p>"
-                            );
-                        if (i == 3)
-                            document.write(
-                                '<p class="m-par_">' +
-                                i +
-                                ".Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero. </p>"
-                            );
-                        if (i == 4)
-                            document.write(
-                                '<p class="m-par_">' +
-                                i +
-                                ". Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio possimus hic sapiente expedita eveniet?</p>"
-                            );
-                        if (i == 5)
-                            document.write(
-                                '<p class="m-par_">' +
-                                i +
-                                ". Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut quos est </p>"
-                            );
-                        if (i == 6)
-                            document.write(
-                                '<p class="m-par_">' +
-                                i +
-                                ". Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, error. Veniam quas excepturi quis? </p>"
-                            );
-                    }
+                  for (var i = 1; i <= 6; i++) {
+                    if(i==1)
+                    document.write(
+                      '<p class="m-par_">' +
+                      i +
+                      ". Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus vitae sed nesciunt?  </p>"
+                    );
+                    if(i==2)
+                    document.write(
+                      '<p class="m-par_">' +
+                      i +
+                      ". Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo impedit quia a nihil </p>"
+                    );
+                    if(i==3)
+                    document.write(
+                      '<p class="m-par_">' +
+                      i +
+                      ".Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero. </p>"
+                    );
+                    if(i==4)
+                    document.write(
+                      '<p class="m-par_">' +
+                      i +
+                      ". Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio possimus hic sapiente expedita eveniet?</p>"
+                    );
+                    if(i==5)
+                    document.write(
+                      '<p class="m-par_">' +
+                      i +
+                      ". Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ut quos est </p>"
+                    );
+                    if(i==6)
+                    document.write(
+                      '<p class="m-par_">' +
+                      i +
+                      ". Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex, error. Veniam quas excepturi quis? </p>"
+                    );
+                  }
                 </script>
-            </marquee>
+              </marquee>
         </div>
 
     </section>
+
+    <!-- Body Second Content -->
     <section class="secondsection">
-        <div class="secondsection-box1">
-            <div class="secondsection-secondHalf-box1">
+        <div class="box1">
+            <div class="secondHalf-box1">
                 <img src="image/img3.jpg" alt="tony stark">
             </div>
-            <div class="secondsection-firstHalf-box1">
-                <div class="secondsection-firstHalf-box1-aboutus">
+            <div class="firstHalf-box1">
+                <div class="firstHalf-box1-aboutus">
                     <h1>About Us</h1>
-                    <h2 class="school-name-Aboutus">Saraswati Shishu Mandir</h2>
-                    <p class="text-small">Saraswati Shishu Mandir, Jogiyacol, Bhiti Rawat, Sahjanwa, Gorakhpur is a Hindi
+                    <h2 class="school-name-Aboutus">Sarswati Shishu Mandir</h2>
+                    <p class="text-small">Sarswati Shishu Mandir, Jogiyacol, Bhiti Rawat, Sahjanwa, Gorakhpur is a Hindi
                         Medium school established by BABULAL SINGH </p>
                     <div class="more"><a href="about.html">Read more</a></div>
                 </div>
 
-                <div class="secondsection-firstHalf-box1-ourmission">
+                <div class="firstHalf-box1-ourmission">
                     <h1>Our Mission</h1>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, aliquam quos nam rerum autem
                         reprehenderit laboriosam, quibusdam quae ducimus sapiente officia rem illum dicta pariatur
@@ -117,7 +130,7 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo doloremque minus doloribus
                         .</p>
                 </div>
-                <div class="secondsection-firstHalf-box1-ourvission">
+                <div class="firstHalf-box1-ourvission">
                     <h1>Our Vission</h1>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sapiente asperiores rerum illo
                         voluptate illum nobis dicta enim ex fugiat amet nesciunt, quod laborum repellat. Suscipit ea
@@ -130,23 +143,25 @@
 
 
     </section>
+
+    <!-- Managment Section -->
     <h1 class="text-management">Our Management</h1>
     <section class="our-management">
-
+        
         <div class="s1-image">
             <img src="image/s1.JPG" alt="">
             <p style="font-size: 18px; font-weight: bolder;">SHIVANAND SINGH</p>
             <P>MANAGER</P>
         </div>
         <div class="s2-image">
-            <img src="image/s1.JPG" alt="">
+            <img src="image/s2.JPG" alt="">
             <p style="font-size: 18px; font-weight: bolder;">SHIVANAND SINGH</p>
-            <P>PRINCIPAL</P>
+            <P>PRINCIPLE</P>
         </div>
         <div class="s2-image">
-            <img src="image/s1.JPG" alt="">
+            <img src="image/s2.jpg" alt="">
             <p style="font-size: 18px; font-weight: bolder;">SHIVANAND SINGH</p>
-            <P>VICE-PRINCIPAL</P>
+            <P>MANAGER</P>
         </div>
         <!-- <div class="s3-image"> -->
         <!-- <img src="image/s2.jpg" alt=""> -->
@@ -155,15 +170,15 @@
         <!-- </div> -->
     </section>
 
-
-    <footer class="footer-main">
-        <div class="footer-contact-media-link">
+    <!-- Footer Section  -->
+    <footer class="footer-black">
+        <div class="contact-media-link">
             <div class="footer-contact-us">
                 <h1>Contact Us</h1>
                 <p>
-                    SARASWATI SHISHU MANDIR, JOGIYACOL, BHITI RAWAT, SAHJANWA
+                    SARSWATI SHISHU MANDIR, JOGIYACOL, BHITI RAWAT, SAHJANWA
                 </p>
-                <p>Phone: +91-9696238943</p>
+                <p><i class="bi bi-telephone-fill"></i>: +91-9696238943</p>
                 <p>Email: sps.shiva.sps@gmail.com</p>
             </div>
             <div class="footer-media">
@@ -174,35 +189,24 @@
                         Gallery</a></li>
                 <div>Media Coverage</div>
             </div>
-            <div class="footer-social-media-links">
+            <div class="footer-important-links">
                 <h1>Our Social Media Links</h1>
-                <div class="footer-social-media-icon">
-
-                    <a href="https://www.facebook.com/shivanand.singh.3323/" target="_blank">
-                        <i class="fa fa-2x fa-facebook" style="color: black;"></i>
-                    </a>
-                    <a href="https://www.instagram.com/shivanand4142/" target="_blank">
-                        <i class="fa fa-2x fa-instagram" style="color: black;"></i>
-                    </a>
-                    <a href="https://www.facebook.com/shivanand.singh.3323/" target="_blank">
-                        <i class="fa fa-2x fa-twitter" style="color: black;"></i>
-                    </a>
-                    <a href="https://www.instagram.com/shivanand4142/" target="_blank">
-                        <i class="fa fa-2x fa-youtube" style="color: black;"></i>
-                    </a>
-                </div>
-
+                <ul class="media">
+                    <li><a href="https://www.facebook.com/shivanand.singh.3323/"
+                            target="_blank">https://www.facebook.com/shivanand.singh.3323
+                    </li>
+                    <li><a href="https://www.instagram.com/shivanand4142/"
+                            target="_blank">https://www.instagram.com/shivanand4142/</a>
+                    </li>
+                </ul>
             </div>
             <div class="footer-visit-us">
                 <h1>VISIT US</h1>
             </div>
-
+            
         </div>
         <div class="footer-copyright-text">
-            <p class="copyright-center">copyright &COPY; SARASWATI SHISHU MANDIR, JOGIYACOL - all right reserved
-                <BR>Designed by-SHIVANAND SINGH</BR>
-            </p>
-
+            <p class="copyright-center"> &COPY; SARSWATI SHISHU MANDIR, JOGIYACOL - all right reserved <br>Designed with &hearts;   by - SHIVANAND SINGH</br></p>
         </div>
     </footer>
     <script src="js/resp.js"></script>
