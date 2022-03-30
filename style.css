@@ -431,8 +431,8 @@
 
 .academics-first-section{
     background-color: #eee0d0;
-    height: 76vh;
-    width: 74vw;
+    height: 100%;
+    width: 100%;
     margin: auto;
     
 }
@@ -584,6 +584,7 @@
     color:  #ed215b;
 }
 @media only screen and (max-width: 1200px){
+    
     .header-r{
         display: none;
     }
