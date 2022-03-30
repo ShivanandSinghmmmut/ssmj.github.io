@@ -434,11 +434,11 @@
     height: 100%;
     width: 100%;
     margin: auto;
-    
+    margin-bottom: 20px;
 }
 .academics-table{
     margin: auto;
-    width: 100vw;
+    width: 75vw;
     height: 500px;
     margin-top: 10px;
 }
@@ -455,6 +455,13 @@
     width: 1057px;
     height: 690px;
     margin-top: 10px;
+}
+.contactUs-first-section{
+    background-color: #eee0d0;
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 .contactUS-table th{
     border: 2px solid rgb(1 1 1);
