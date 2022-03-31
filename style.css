@@ -279,7 +279,7 @@
 .footer-contact-media-link{
     color: #ffffff;
     display: flex;
-    height: 32vh;
+    height: 37vh;
     /* margin-left: 55px; */
 }
 .footer-contact-us{
@@ -430,7 +430,7 @@
 }
 
 .academics-first-section{
-    background-color: #eee0d0;
+    /* background-color: #eee0d0; */
     height: 100%;
     width: 100%;
     margin: auto;
@@ -447,9 +447,10 @@
     background-color: aqua;
 }
 .academics-table td{ text-align: center;
-    border: 2px solid #31598b;
-    background-color: rgb(183 240 234);
+    border: 2px solid #bcc6d3;
+    background-color: rgb(183 201 255);
 }
+
 .contactUS-table{
     margin: auto;
     width: 1057px;
