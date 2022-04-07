@@ -81,7 +81,8 @@
     display: block;
 }
 .school-name{
-    background-color: #F76E11;
+    /* background-color: #F76E11; */
+    background: linear-gradient(to right, red, blue, green);
     display: block;
     height: 5vh;
     /* position: sticky; */
@@ -97,15 +98,15 @@
 }
 @keyframes shiva1{
     30%{
-        background-color: rgb(124, 21, 21);
+        background: linear-gradient(to right, red, blue, green);
         color: rgb(245, 245, 245);
     }
     50%{
-        background-color: #F76E11;
+        background: linear-gradient(to right, rgb(0, 255, 162), rgb(42, 42, 182), rgb(255, 73, 6));;
         color: rgb(255, 255, 255);
     }
     80%{
-        background-color: #00ff00;
+        background: linear-gradient(to left rgb(241, 26, 26), rgb(60, 235, 11), rgb(16, 209, 239));;
         color: rgb(255, 255, 255);
     }
 }
@@ -731,7 +732,7 @@
     .notice-board{
         justify-content: center;
         height: 50px;
-        margin-top: 175px;
+        margin-top: 250px;
     }
 
     .Admission-first-section-form{
